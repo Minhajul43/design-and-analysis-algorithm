@@ -1,8 +1,6 @@
-# Binary search works on a sorted list.
-
+# Binary search 
 
 def binary_search(numbers, target):
-	"""Return the index of target, or -1 if it is not found."""
 	left, right = 0, len(numbers) - 1
 
 	while left <= right:
@@ -18,9 +16,13 @@ def binary_search(numbers, target):
 	return -1
 
 
-# Customize these values as needed. Keep the list sorted.
-numbers = [3, 7, 12, 18, 25, 31, 42]
-target = 25
+n=int(input("Enter the size of array:"))
+numbers=[]
+for i in range(n):
+	numbers.append(int(input(f"Enter Element {i}:")))
+
+print(f"Unsorted given number:{numbers}")
+target=int(input(f"Enter Search value:"))
 
 result = binary_search(numbers, target)
 if result == -1:

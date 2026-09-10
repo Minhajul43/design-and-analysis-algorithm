@@ -4,8 +4,7 @@ array=[]
 for i in range(n):
   array.append(int(input(f"Enter Element {i}:")))
 
-print(f"The Unsorting data:{array}")
-
+print(f"The Unsorted data:{array}")
 
 def merge_sort(values):
   if len(values) <= 1:
